@@ -11,4 +11,4 @@ try :
     print("Le nombre {} n'est pas multiple de {}".format(nombre,diviseur))
 
 except :
-  print("Veuillez saisir des valeurs entières !")
+  print("Veuillez saisir des valeurs entieres !")
