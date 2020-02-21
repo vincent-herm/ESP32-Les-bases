@@ -1,3 +1,5 @@
+# PGCD : programme de calcul du PCGD de 2 entiers
+# Auteur : Vincent HERMITANT - ENIM 2020
 x = 20  
 y = 70
 diviseurs_x=[]    # creation liste vide pour diviseurs de x
