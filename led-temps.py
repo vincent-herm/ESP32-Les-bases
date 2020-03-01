@@ -10,5 +10,6 @@ for iteration in range (10000) :
 
 delta = time.ticks_ms() - start # calcule l'ecart : apres - avant
 
-print ("Temps total pour 10 000 cycles :", delta, "ms")
-print ("Temps pour 1 cycle ON/OFF      :" , delta/10, "microsecondes")
+print("Temps total pour 10 000 cycles :", delta, "ms")
+print("Temps pour 1 cycle ON/OFF      :" , delta/10, "microsecondes")
+print("Frequence de basculement       : {0:2.1f} kHz".format(10000/delta))

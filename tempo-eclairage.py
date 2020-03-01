@@ -6,11 +6,12 @@ bp = Pin(25, Pin.IN)
 
 compt = 0 
 while True :   
-    if bp.value() : compt = 20 
+    if bp.value() : compt = 20  ; print ("Light ON")  
+    print(compt)
     if compt > 0 : 
         led.value(1)
     else : 
         led.value(0)
     time.sleep(0.1)
-    compt = compt - 1
-
+    compt = compt - (compt > 0)
+    if compt == 0 : print ("Light OFF")

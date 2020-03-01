@@ -5,7 +5,7 @@ from neopixel import NeoPixel
 n = 8                              # nombre de pixels
 p = 26                             # pin de commande du neopixel
 np = NeoPixel(Pin(p), n)           # creation de l'instance np
-
+coef=0.2
 def wheel(pos):
     if pos < 0 or pos > 255:
         return (0, 0, 0)
