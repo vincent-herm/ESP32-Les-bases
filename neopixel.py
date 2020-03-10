@@ -5,14 +5,14 @@ n = 8                          # nombre de pixels
 p = 26                         # pin de commande du neopixel
 np = NeoPixel(Pin(p), n)       # creation de l'instance np
           
-np[0] = (30, 0, 0)             # rouge, 30/255 brightness, soit 12%
-np[1] = (255, 0, 0)            # rouge, 100% brightness
-np[2] = (0, 255, 0)            # vert, 100% brightness
-np[3] = (0, 0, 255)            # bleu, 100% brightness
-np[4] = (255, 255, 0)          # rouge + vert = jaune
-np[5] = (0, 255, 255)          # vert + bleu = cyan
-np[6] = (255, 0, 255)          # rouge + bleu = magenta (violet)
-np[7] = (255, 255, 255)        # rouge + vert + bleu = blanc
-np.write()                     # Ecriture des valeurs sur le ruban
+np[0] = (10, 0, 0)            # rouge, 10/255 brightness, soit 4%
+np[1] = (40, 0, 0)            # rouge, 40/255 brightness, soit 16%
+np[2] = (0, 40, 0)            # vert, 40/255 brightness, soit 16%
+np[3] = (0, 0, 40)            # bleu, 40/255 brightness, soit 16%
+np[4] = (40, 40, 0)           # rouge + vert = jaune
+np[5] = (0, 40, 40)           # vert + bleu = cyan
+np[6] = (40, 0, 40)           # rouge + bleu = magenta (violet)
+np[7] = (40, 40, 40)          # rouge + vert + bleu = blanc
+np.write()                    # Ecriture des valeurs sur le ruban
 
 
