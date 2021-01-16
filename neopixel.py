@@ -13,6 +13,6 @@ np[4] = (40, 40, 0)           # rouge + vert = jaune
 np[5] = (0, 40, 40)           # vert + bleu = cyan
 np[6] = (40, 0, 40)           # rouge + bleu = magenta (violet)
 np[7] = (40, 40, 40)          # rouge + vert + bleu = blanc
-np.write()                    # Ecriture des valeurs sur le ruban
+np.write()   
 
 

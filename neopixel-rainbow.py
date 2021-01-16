@@ -5,7 +5,8 @@ from neopixel import NeoPixel
 n = 8                              # nombre de pixels
 p = 26                             # pin de commande du neopixel
 np = NeoPixel(Pin(p), n)           # creation de l'instance np
-coef=0.2
+bp = Pin(25, Pin.IN)
+
 def wheel(pos):
     if pos < 0 or pos > 255:
         return (0, 0, 0)
@@ -24,7 +25,7 @@ def rainbow_cycle(wait):
             np[i] = wheel(rc_index & 255)
         np.write()
         sleep_ms(wait)
-
-while True :
+    
+while not bp.value():
     rainbow_cycle(1)
     

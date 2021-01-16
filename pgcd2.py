@@ -4,7 +4,8 @@ def pgcd(a,b):               # Version 1 (de base)
         print(a, b, r)
         a,b = b,r
     return a
-print (pgcd(70,20))          
+x = 70 ; y = 20
+print ("PGCD de", x, "et", y, ":", pgcd(70,20))          
 
 #def pgcd(a,b) :             # Version 2 (simplifiee)
 #    while b != 0 :
