@@ -5,7 +5,7 @@ led = Pin(2, Pin.OUT)
 bouton = Pin(25, Pin.IN)
     
 while True :
-    if not bouton.value() :
+    if bouton.value() :
         led.value(1)
     else :
         led.value(0)
