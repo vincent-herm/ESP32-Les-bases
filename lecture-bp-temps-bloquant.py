@@ -1,7 +1,7 @@
 from machine import Pin
 from time import sleep
 
-bpB = Pin(34, Pin.IN)
+bp = Pin(25, Pin.IN)
 compt_temps = 0
 
 for t in range(5):           # on fait juste 5 cycles appui/relachement
