@@ -2,7 +2,7 @@ from machine import Pin
 from time import sleep, sleep_ms, sleep_us
 
 led_bleue = Pin(2, Pin.OUT)
-led_verte = Pin(23, Pin.OUT)
+led_verte = Pin(18, Pin.OUT)
 compt = 0
 
 while compt < 4000  :             # on arrete la While apres 4 secondes
